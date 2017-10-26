@@ -1,3 +1,5 @@
+a php5.6 fork from https://github.com/bestit/symfony-kitchensink-bundle
+
 # bestit/kitchensink-bundle
 
 Helps you create a kitchensink incl. route, template and services.
