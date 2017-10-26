@@ -4,7 +4,6 @@ namespace BestIt\KitchensinkBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
-
 /**
  * Configuration for the bundle.
  * @author blange <lange@bestit-online.de>
@@ -21,19 +20,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $builder = new TreeBuilder();
-
-        $builder->root('best_it_kitchensink')
-            ->children()
-                ->scalarNode('template')
-                    ->info('Which template should be used the render the kitchensink?')
-                    ->defaultValue('kitchensink/index.html.twig')
-                ->end()
-                ->scalarNode('data_provider')
-                    ->info('The data provider service implementing the matching interface.')
-                    ->isRequired()
-                ->end()
-            ->end();
-
+        $builder->root('best_it_kitchensink')->children()->scalarNode('template')->info('Which template should be used the render the kitchensink?')->defaultValue('kitchensink/index.html.twig')->end()->scalarNode('data_provider')->info('The data provider service implementing the matching interface.')->isRequired()->end()->end();
         return $builder;
     }
 }

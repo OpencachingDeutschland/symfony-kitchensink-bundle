@@ -3,7 +3,6 @@
 namespace BestIt\KitchensinkBundle\Tests;
 
 use BestIt\KitchensinkBundle\DataProviderInterface;
-
 /**
  * Fale class for tests.
  * @author blange <lange@bestit-online.de>
@@ -17,11 +16,10 @@ class DataProviderFake implements DataProviderInterface
      * Fake direct getter.
      * @return string
      */
-    public function bar(): string
+    public function bar()
     {
         return __METHOD__;
     }
-
     /**
      * Fake getter method.
      * @return string
@@ -30,7 +28,6 @@ class DataProviderFake implements DataProviderInterface
     {
         return __METHOD__;
     }
-
     /**
      * Fake getter method with snake case.
      * @return string
@@ -39,17 +36,12 @@ class DataProviderFake implements DataProviderInterface
     {
         return __METHOD__;
     }
-
     /**
      * Returns an array with template vars (and optional their getters) to fill the kitchensink template.
      * @return array
      */
-    public function getTemplateVars(): array
+    public function getTemplateVars()
     {
-        return [
-            'foo' => 'bar',
-            'foobar',
-            'foobarBaz'
-        ];
+        return ['foo' => 'bar', 'foobar', 'foobarBaz'];
     }
 }

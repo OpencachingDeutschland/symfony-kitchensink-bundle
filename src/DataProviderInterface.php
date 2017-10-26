@@ -14,5 +14,5 @@ interface DataProviderInterface
      * Returns an array with template vars (and optional their getters) to fill the kitchensink template.
      * @return array
      */
-    public function getTemplateVars(): array;
+    public function getTemplateVars();
 }

@@ -3,7 +3,6 @@
 namespace BestIt\KitchensinkBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-
 /**
  * Class BestItKitchensinkBundle
  * @author blange <lange@bestit-online.de>
@@ -12,5 +11,4 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class BestItKitchensinkBundle extends Bundle
 {
-
 }
